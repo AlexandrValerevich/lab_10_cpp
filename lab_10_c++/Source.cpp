@@ -18,6 +18,7 @@ int main() {
 		integer_v.push_back(rand()%100);
 
 #ifdef DEBUG
+	cout << "--------SOURCE ARRAY--------" << endl;
 	for (const auto &it : integer_v) 
 		cout << it << endl;
 	cout << endl;
@@ -27,6 +28,7 @@ int main() {
 		return a % 2 < b % 2;
 		});
 #ifdef DEBUG
+	cout << "--------FINAL_ARRAY--------" << endl;
 	for (const auto& it : integer_v)
 		cout << it << endl;
 	cout << endl;
